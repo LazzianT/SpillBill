@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=SpillBill&fontSize=65&fontColor=ffffff&animation=fadeIn&desc=Order%20to%20Invoice%20System%20untuk%20UMKM&descSize=18&descAlignY=68" width="100%" alt="SpillBill Banner"/>
 
-<a href="https://github.com/">
+<a href="https://github.com/LazzianT/SpillBill">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3FCF8E&center=true&vCenter=true&width=550&lines=Order+%E2%86%92+Invoice+%E2%86%92+Paid+%F0%9F%9A%80;Kelola+Pelanggan+%2B+Pesanan+%2B+Tagihan;Otomatisasi+Faktur+dalam+Satu+Klik+%E2%9A%A1;Fast.+Secure.+Automated." alt="Typing Animation"/>
 </a>
 
@@ -23,6 +23,8 @@
 ![Repo Size](https://img.shields.io/github/repo-size/LazzianT/SpillBill?style=flat&logo=github&color=8B949E&label=size)
 
 **SpillBill** adalah aplikasi web *Order-to-Invoice* yang membantu UMKM mengelola seluruh alur transaksi — mulai dari pencatatan pelanggan, pemesanan (Sales Order), penerbitan faktur otomatis, hingga pelacakan pembayaran dan pelunasan — semuanya secara digital, cepat, dan rapi.
+
+> 📌 **Status:** Repositori ini saat ini berisi *dokumentasi* (README + SRS). Fitur, role, dan non-functional requirements di bawah adalah **target yang direncanakan** — kode aplikasi belum di-push dan akan menyusul di milestone berikutnya.
 
 </div>
 
@@ -135,16 +137,13 @@ flowchart LR
 
 ```bash
 # 1️⃣ Clone repository (frontend & backend — dual repo)
-git clone https://github.com/<username>/spillbill-frontend.git
-git clone https://github.com/<username>/spillbill-backend.git
+git clone https://github.com/LazzianT/spillbill-frontend.git
+git clone https://github.com/LazzianT/spillbill-backend.git
 
-# 2️⃣ Install dependencies (Node.js 22+)
-npm install
-
-# 3️⃣ Setup environment variables
-cp .env.example .env   # isi Supabase URL & API Key
-
-# 4️⃣ Jalankan
+# 2️⃣ Jalankan — 🔜 menyusul
+# Kode aplikasi belum di-push ke repo mana pun. Saat sudah tersedia:
+npm install          # Node.js 22+
+cp .env.example .env # isi Supabase URL & API Key
 npm run dev
 ```
 
@@ -156,9 +155,9 @@ npm run dev
 
 | NPM | Nama | Peran |
 |:---:|:---:|:---:|
-| **202343501595** | **Syanaia Lulailika** | 🧑‍💻 Full-Stack Developer |
-| **202343501604** | **Lazzian Al Falah** | 🧑‍💻 Full-Stack Developer |
-| **202343501690** | **Muhammad Izra Ilham** | 🧑‍💻 Full-Stack Developer |
+| **202343501595** | **Syanaia Lulailika** | 🧑‍💻 Developer Module Payment |
+| **202343501604** | **Lazzian Al Falah** | 🧑‍💻 Developer Module Invoicing |
+| **202343501690** | **Muhammad Izra Ilham** | 🧑‍💻 Developer Module Sales Order |
 
 </div>
 
