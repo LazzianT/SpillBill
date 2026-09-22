@@ -57,20 +57,6 @@ flowchart LR
     style OUT fill:#0d1117,stroke:#F78166,color:#c9d1d9
 ```
 
-### 🚦 Siklus Status Invoice
-
-```mermaid
-stateDiagram-v2
-    [*] --> Invoiced : Generate Invoice
-    Invoiced --> Paid : Pembayaran Lunas
-    Invoiced --> Overdue : Melewati Jatuh Tempo
-    Overdue --> Paid : Pembayaran Lunas
-    Paid --> [*]
-
-    note right of Invoiced : SO & Invoice terkunci 🔒<br/>(tidak bisa edit/hapus)
-    note right of Paid : Invoice terkunci permanen 🔒
-```
-
 > ⚠️ **Business Rules:** Sales Order tidak dapat diedit/dihapus setelah status *Invoiced* — Invoice tidak dapat diedit/dihapus setelah status *Paid*.
 
 ---
