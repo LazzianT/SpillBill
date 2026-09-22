@@ -31,8 +31,8 @@ Terima kasih sudah mau berkontribusi pada **SpillBill**! 🎉 Dokumen ini berisi
 
 ```bash
 # 1️⃣ Clone repo (frontend & backend — dual repo)
-git clone https://github.com/LazzianT/SpillBill.git
-cd SpillBill
+git clone https://github.com/LazzianT/spillbill-frontend.git
+git clone https://github.com/LazzianT/spillbill-backend.git
 
 # 2️⃣ Install dependencies
 npm install

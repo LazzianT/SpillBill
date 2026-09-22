@@ -89,7 +89,7 @@ flowchart LR
 | **Backend** | Express.js (Node.js 22+) |
 | **Database** | Supabase (PostgreSQL) |
 | **Hosting** | Vercel |
-| **Arsitektur** | Monorepo — FrontEnd + BackEnd dalam satu repo (lihat *Memulai*) • Role-Based Access Control |
+| **Arsitektur** | Dual Repo (FrontEnd + BackEnd) • Role-Based Access Control |
 
 <details>
 <summary><b>🔐 Keamanan & Non-Functional Requirements</b></summary>
@@ -136,12 +136,12 @@ flowchart LR
 ## 🚀 Memulai
 
 ```bash
-# 1️⃣ Clone repository (frontend + backend dalam satu repo)
-git clone https://github.com/LazzianT/SpillBill.git
-cd SpillBill
+# 1️⃣ Clone repository (frontend & backend — dual repo)
+git clone https://github.com/LazzianT/spillbill-frontend.git
+git clone https://github.com/LazzianT/spillbill-backend.git
 
 # 2️⃣ Jalankan — 🔜 menyusul
-# Kode aplikasi belum di-push ke repo ini. Saat sudah tersedia:
+# Kode aplikasi belum di-push ke repo mana pun. Saat sudah tersedia:
 npm install          # Node.js 22+
 cp .env.example .env # isi Supabase URL & API Key
 npm run dev
