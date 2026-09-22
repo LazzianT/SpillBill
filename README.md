@@ -13,6 +13,15 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
+<!-- Badge dinamis — update otomatis dari GitHub API -->
+![Stars](https://img.shields.io/github/stars/LazzianT/SpillBill?style=flat&logo=github&color=3FCF8E&label=stars)
+![Forks](https://img.shields.io/github/forks/LazzianT/SpillBill?style=flat&logo=github&color=58A6FF&label=forks)
+![Issues](https://img.shields.io/github/issues/LazzianT/SpillBill?style=flat&logo=github&color=F78166&label=issues)
+![Last Commit](https://img.shields.io/github/last-commit/LazzianT/SpillBill/main?style=flat&logo=git&color=A371F7&label=last%20commit)
+![Total Commits](https://img.shields.io/github/commit-activity/t/LazzianT/SpillBill?style=flat&logo=git&color=3FB950&label=commits)
+![Contributors](https://img.shields.io/github/contributors/LazzianT/SpillBill?style=flat&logo=github&color=DB61A2&label=contributors)
+![Repo Size](https://img.shields.io/github/repo-size/LazzianT/SpillBill?style=flat&logo=github&color=8B949E&label=size)
+
 **SpillBill** adalah aplikasi web *Order-to-Invoice* yang membantu UMKM mengelola seluruh alur transaksi — mulai dari pencatatan pelanggan, pemesanan (Sales Order), penerbitan faktur otomatis, hingga pelacakan pembayaran dan pelunasan — semuanya secara digital, cepat, dan rapi.
 
 </div>
