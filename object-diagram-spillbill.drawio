@@ -1,0 +1,288 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="7T9zygYlbfhjZaujslgQ" name="Object Diagram">
+    <mxGraphModel dx="1030" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-1" parent="1" style="fillColor=#FAFCFF;strokeColor=none;rounded=0;" value="" vertex="1">
+          <mxGeometry height="1335" width="1970" x="399" y="173.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=31;fontStyle=1;fontColor=#182C4A;strokeColor=none;fillColor=none;" value="OBJECT DIAGRAM — SISTEM SPILLBILL" vertex="1">
+          <mxGeometry height="48" width="1880" x="444" y="201.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-4" parent="1" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#73859A;align=left;strokeColor=none;fillColor=none;" value="DATA PELANGGAN &amp;amp; AKTIVITAS" vertex="1">
+          <mxGeometry height="25" width="301" x="454" y="316.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-5" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.45;exitDx=0;exitDy=0;entryX=0;entryY=0.45;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-6" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.45;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-7" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.32;exitDx=0;exitDy=0;entryX=0;entryY=0.46;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-57" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-8" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.45;exitDx=0;exitDy=0;entryX=0;entryY=0.48;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-60" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1971" y="483.20001220703125" />
+              <mxPoint x="1971" y="651.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-9" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0.64;exitY=1;exitDx=0;exitDy=0;entryX=0.64;entryY=0;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-10" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.54;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-30" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="426" y="873.2000122070312" />
+              <mxPoint x="426" y="1223.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-11" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0.52;exitY=1;exitDx=0;exitDy=0;entryX=0.52;entryY=0;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-12" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-39" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="834" y="608.2000122070312" />
+              <mxPoint x="834" y="1069.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-13" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.53;exitDx=0;exitDy=0;entryX=0;entryY=0.53;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-14" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-15" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0.32;exitY=1;exitDx=0;exitDy=0;entryX=0.55;entryY=0;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-51" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-16" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=1;exitY=0.84;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-54" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1971" y="666.2000122070312" />
+              <mxPoint x="1971" y="1074.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-17" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0.87;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-51" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="916.2000122070312" />
+              <mxPoint x="1574" y="916.2000122070312" />
+              <mxPoint x="1694" y="916.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-18" edge="1" parent="1" source="AczNXg-LiF9Ot32mWfNv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#536578;strokeWidth=1.8;endArrow=none;startArrow=none;exitX=0.87;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;" target="AczNXg-LiF9Ot32mWfNv-54" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="1195.2000122070312" />
+              <mxPoint x="1573" y="1195.2000122070312" />
+              <mxPoint x="1694" y="1195.2000122070312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-19" parent="1" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#73859A;align=left;strokeColor=none;fillColor=none;" value="PESANAN &amp;amp; PRODUK" vertex="1">
+          <mxGeometry height="25" width="640" x="884" y="316.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-20" parent="1" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#73859A;align=left;strokeColor=none;fillColor=none;" value="INVOICE &amp;amp; PEMBAYARAN" vertex="1">
+          <mxGeometry height="25" width="680" x="1609" y="316.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-21" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="170" width="300" x="454" y="364.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-22" parent="AczNXg-LiF9Ot32mWfNv-21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF0CF;strokeColor=#C8AE78;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;customer1 : Customer&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-23" parent="AczNXg-LiF9Ot32mWfNv-21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8AE78;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;CUS-001&quot;&lt;br&gt;name = &quot;CV Sinar Jaya&quot;&lt;br&gt;contactInfo = &quot;admin@sinarjaya.id&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="137" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-24" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="194" width="300" x="454" y="638.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-25" parent="AczNXg-LiF9Ot32mWfNv-24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF0CF;strokeColor=#C8AE78;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;user1 : User&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-26" parent="AczNXg-LiF9Ot32mWfNv-24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8AE78;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;USR-001&quot;&lt;br&gt;username = &quot;adminspillbill&quot;&lt;br&gt;passwordHash = &quot;[hash]&quot;&lt;br&gt;role = ADMIN&lt;br&gt;active = true&lt;/div&gt;" vertex="1">
+          <mxGeometry height="161" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-27" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="182" width="300" x="454" y="925.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-28" parent="AczNXg-LiF9Ot32mWfNv-27" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9E0FA;strokeColor=#AA96CF;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;history1 : History&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-29" parent="AczNXg-LiF9Ot32mWfNv-27" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#AA96CF;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;HIS-001&quot;&lt;br&gt;actor = user1&lt;br&gt;action = CREATE&lt;br&gt;entityType = &quot;SalesOrder&quot;&lt;br&gt;entityId = &quot;SO-001&quot;&lt;br&gt;occurredAt = &quot;2026-10-26 09:00&quot;&lt;br&gt;description = &quot;Pesanan dibuat&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="149" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-30" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="182" width="300" x="454" y="1129.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-31" parent="AczNXg-LiF9Ot32mWfNv-30" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9E0FA;strokeColor=#AA96CF;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;history2 : History&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-32" parent="AczNXg-LiF9Ot32mWfNv-30" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#AA96CF;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;HIS-002&quot;&lt;br&gt;actor = user1&lt;br&gt;action = RECORD_PAYMENT&lt;br&gt;entityType = &quot;Payment&quot;&lt;br&gt;entityId = &quot;PAY-002&quot;&lt;br&gt;occurredAt = &quot;2026-10-26 11:00&quot;&lt;br&gt;description = &quot;Pembayaran dicatat&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="149" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-33" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="214" width="330" x="879" y="364.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-34" parent="AczNXg-LiF9Ot32mWfNv-33" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFF1DB;strokeColor=#8BB68C;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;order1 : SalesOrder&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-35" parent="AczNXg-LiF9Ot32mWfNv-33" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8BB68C;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;SO-001&quot;&lt;br&gt;orderNumber = &quot;SO-2026-001&quot;&lt;br&gt;orderDate = 2026-10-26&lt;br&gt;status = INVOICED&lt;br&gt;items = [orderItem1, orderItem2]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="181" width="330" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-36" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="300" x="889" y="705.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-37" parent="AczNXg-LiF9Ot32mWfNv-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFF1DB;strokeColor=#8BB68C;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;orderItem1 : SalesOrderItem&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-38" parent="AczNXg-LiF9Ot32mWfNv-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8BB68C;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;SOI-001&quot;&lt;br&gt;product = product1&lt;br&gt;quantity = 1&lt;br&gt;unitPrice = 1500000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-39" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="300" x="889" y="983.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-40" parent="AczNXg-LiF9Ot32mWfNv-39" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFF1DB;strokeColor=#8BB68C;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;orderItem2 : SalesOrderItem&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-41" parent="AczNXg-LiF9Ot32mWfNv-39" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8BB68C;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;SOI-002&quot;&lt;br&gt;product = product2&lt;br&gt;quantity = 2&lt;br&gt;unitPrice = 250000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="300" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-42" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="260" x="1264" y="705.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-43" parent="AczNXg-LiF9Ot32mWfNv-42" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF0CF;strokeColor=#C8AE78;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;product1 : Product&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-44" parent="AczNXg-LiF9Ot32mWfNv-42" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8AE78;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;PRD-001&quot;&lt;br&gt;name = &quot;Pembuatan Website&quot;&lt;br&gt;unitPrice = 1500000&lt;br&gt;active = true&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="260" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-45" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="260" x="1264" y="983.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-46" parent="AczNXg-LiF9Ot32mWfNv-45" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF0CF;strokeColor=#C8AE78;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;product2 : Product&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-47" parent="AczNXg-LiF9Ot32mWfNv-45" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8AE78;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;PRD-002&quot;&lt;br&gt;name = &quot;Maintenance Bulanan&quot;&lt;br&gt;unitPrice = 250000&lt;br&gt;active = true&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="260" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-48" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="268" width="330" x="1604" y="364.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-49" parent="AczNXg-LiF9Ot32mWfNv-48" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFEAFE;strokeColor=#8AADD5;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;invoice1 : InvoiceHeader&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-50" parent="AczNXg-LiF9Ot32mWfNv-48" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8AADD5;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;INV-001&quot;&lt;br&gt;invoiceNumber = &quot;INV-2026-001&quot;&lt;br&gt;salesOrder = order1&lt;br&gt;invoiceDate = 2026-10-26&lt;br&gt;dueDate = 2026-11-02&lt;br&gt;status = PARTIALLY_PAID&lt;br&gt;details = [invoiceDetail1, invoiceDetail2]&lt;br&gt;payments = [payment1, payment2]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="235" width="330" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-51" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="290" x="1609" y="705.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-52" parent="AczNXg-LiF9Ot32mWfNv-51" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFEAFE;strokeColor=#8AADD5;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;invoiceDetail1 : InvoiceDetail&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-53" parent="AczNXg-LiF9Ot32mWfNv-51" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8AADD5;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;IVD-001&quot;&lt;br&gt;salesOrderItem = orderItem1&lt;br&gt;product = product1&lt;br&gt;quantity = 1&lt;br&gt;unitPrice = 1500000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="290" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-54" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="177" width="290" x="1609" y="983.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-55" parent="AczNXg-LiF9Ot32mWfNv-54" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFEAFE;strokeColor=#8AADD5;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;invoiceDetail2 : InvoiceDetail&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-56" parent="AczNXg-LiF9Ot32mWfNv-54" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8AADD5;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;IVD-002&quot;&lt;br&gt;salesOrderItem = orderItem2&lt;br&gt;product = product2&lt;br&gt;quantity = 2&lt;br&gt;unitPrice = 250000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="290" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-57" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="184" width="275" x="2019" y="364.20001220703125" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-58" parent="AczNXg-LiF9Ot32mWfNv-57" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCE2E5;strokeColor=#CF9DA5;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;payment1 : Payment&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="275" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-59" parent="AczNXg-LiF9Ot32mWfNv-57" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CF9DA5;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;PAY-001&quot;&lt;br&gt;paymentDate = &quot;2026-10-26 10:30&quot;&lt;br&gt;amount = 1000000&lt;br&gt;method = BANK_TRANSFER&lt;br&gt;status = SUCCESS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="151" width="275" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-60" parent="1" style="group;html=1;container=1;collapsible=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="184" width="275" x="2019" y="563.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-61" parent="AczNXg-LiF9Ot32mWfNv-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCE2E5;strokeColor=#CF9DA5;fontColor=#182A44;fontSize=15;align=center;verticalAlign=middle;spacing=4;" value="&lt;u&gt;&lt;b&gt;payment2 : Payment&lt;/b&gt;&lt;/u&gt;" vertex="1">
+          <mxGeometry height="33" width="275" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-62" parent="AczNXg-LiF9Ot32mWfNv-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CF9DA5;fontColor=#28364A;fontSize=13;align=left;verticalAlign=top;spacingTop=8;spacingLeft=11;spacingRight=7;overflow=hidden;" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:1.45;&quot;&gt;id = &quot;PAY-002&quot;&lt;br&gt;paymentDate = &quot;2026-10-26 11:00&quot;&lt;br&gt;amount = 500000&lt;br&gt;method = EWALLET&lt;br&gt;status = SUCCESS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="151" width="275" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-63" parent="1" style="rounded=1;arcSize=9;fillColor=#FFFFFF;strokeColor=#A8B8C8;strokeWidth=1.4;" value="" vertex="1">
+          <mxGeometry height="126" width="930" x="445" y="1343.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-64" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#1D2D42;fontSize=16;fontStyle=1;align=left;" value="KETERANGAN" vertex="1">
+          <mxGeometry height="25" width="250" x="465" y="1353.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-65" parent="1" style="rounded=0;fillColor=#FFF0CF;strokeColor=#C8AE78;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="19" width="26" x="466" y="1390.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-66" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Master data" vertex="1">
+          <mxGeometry height="29" width="215" x="503" y="1387.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-67" parent="1" style="rounded=0;fillColor=#DFF1DB;strokeColor=#8BB68C;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="19" width="26" x="697" y="1390.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-68" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Transaksi pesanan" vertex="1">
+          <mxGeometry height="29" width="215" x="734" y="1387.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-69" parent="1" style="rounded=0;fillColor=#DFEAFE;strokeColor=#8AADD5;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="19" width="26" x="929" y="1390.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-70" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Invoice / tagihan" vertex="1">
+          <mxGeometry height="29" width="215" x="966" y="1387.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-71" parent="1" style="rounded=0;fillColor=#FCE2E5;strokeColor=#CF9DA5;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="19" width="26" x="1159" y="1390.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-72" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Pembayaran" vertex="1">
+          <mxGeometry height="29" width="215" x="1196" y="1387.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-73" parent="1" style="rounded=0;fillColor=#E9E0FA;strokeColor=#AA96CF;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="19" width="26" x="466" y="1428.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-74" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Riwayat aktivitas" vertex="1">
+          <mxGeometry height="29" width="215" x="503" y="1425.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-75" parent="1" style="rounded=0;fillColor=#536578;strokeColor=#536578;" value="" vertex="1">
+          <mxGeometry height="2" width="68" x="704" y="1435.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-76" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=13;align=left;verticalAlign=middle;" value="Garis = link/relasi antarobjek" vertex="1">
+          <mxGeometry height="29" width="365" x="783" y="1420.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-77" parent="1" style="rounded=1;arcSize=9;fillColor=#FFFFFF;strokeColor=#A8B8C8;strokeWidth=1.4;" value="" vertex="1">
+          <mxGeometry height="126" width="927" x="1399" y="1343.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-78" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#1D2D42;fontSize=16;fontStyle=1;align=left;" value="CATATAN SNAPSHOT" vertex="1">
+          <mxGeometry height="25" width="850" x="1419" y="1353.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-79" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=12;align=left;verticalAlign=middle;" value="• order1 berisi 2 item: website (Rp1.500.000) dan maintenance 2× (Rp250.000)." vertex="1">
+          <mxGeometry height="21" width="867" x="1419" y="1383.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-80" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=12;align=left;verticalAlign=middle;" value="• invoice1 menagih Rp2.000.000; 2 pembayaran berhasil total Rp1.500.000." vertex="1">
+          <mxGeometry height="21" width="867" x="1419" y="1404.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-81" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=12;align=left;verticalAlign=middle;" value="• Sisa tagihan invoice1 = Rp500.000 (status PARTIALLY_PAID)." vertex="1">
+          <mxGeometry height="21" width="867" x="1419" y="1425.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-82" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#314359;fontSize=12;align=left;verticalAlign=middle;" value="• Setiap kotak adalah INSTANCE objek, bukan definisi class atau tabel database." vertex="1">
+          <mxGeometry height="21" width="867" x="1419" y="1446.2000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="AczNXg-LiF9Ot32mWfNv-83" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#718398;fontSize=12;align=center;verticalAlign=middle;" value="Diagram bersifat ilustratif; nilai ID, enum, dan transaksi adalah contoh, bukan data produksi." vertex="1">
+          <mxGeometry height="16" width="1875" x="444" y="1480.2000122070312" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
