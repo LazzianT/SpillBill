@@ -10,8 +10,8 @@
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.4-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-22%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 <!-- Badge dinamis — update otomatis dari GitHub API -->
 ![Stars](https://img.shields.io/github/stars/LazzianT/SpillBill?style=flat&logo=github&color=3FCF8E&label=stars)
@@ -24,7 +24,7 @@
 
 **SpillBill** adalah aplikasi web *Order-to-Invoice* yang membantu UMKM mengelola seluruh alur transaksi — mulai dari pencatatan pelanggan, pemesanan (Sales Order), penerbitan faktur otomatis, hingga pelacakan pembayaran dan pelunasan — semuanya secara digital, cepat, dan rapi.
 
-> 📌 **Status:** Repositori ini saat ini berisi *dokumentasi* (README + SRS). Fitur, role, dan non-functional requirements di bawah adalah **target yang direncanakan** — kode aplikasi belum di-push dan akan menyusul di milestone berikutnya.
+> Aplikasi SpillBill mengelola pelanggan, produk, Sales Order, invoice, pembayaran, dan riwayat aktivitas dengan autentikasi berbasis role.
 
 </div>
 
@@ -87,9 +87,8 @@ flowchart LR
 |---|---|
 | **Frontend** | React + Vite + TypeScript |
 | **Backend** | Express.js (Node.js 22+) |
-| **Database** | Supabase (PostgreSQL) |
-| **Hosting** | Vercel |
-| **Arsitektur** | Dual Repo (FrontEnd + BackEnd) • Role-Based Access Control |
+| **Database** | MySQL 8.4 |
+| **Arsitektur** | Frontend React + API Express • Role-Based Access Control |
 
 <details>
 <summary><b>🔐 Keamanan & Non-Functional Requirements</b></summary>
@@ -133,19 +132,80 @@ flowchart LR
 
 ---
 
-## 🚀 Memulai
+## Instalasi Lokal
+
+### Prasyarat
+
+- Node.js 22 atau lebih baru
+- MySQL 8.4
+
+### 1. Siapkan database
+
+Buat database MySQL kosong, lalu jalankan schema dan seed dari root repository:
 
 ```bash
-# 1️⃣ Clone repository (frontend & backend — dual repo)
-git clone https://github.com/LazzianT/spillbill-frontend.git
-git clone https://github.com/LazzianT/spillbill-backend.git
+mysql -u root -p -e "CREATE DATABASE spillbill CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -p spillbill < database/schema.sql
+mysql -u root -p spillbill < database/seed.sql
+```
 
-# 2️⃣ Jalankan — 🔜 menyusul
-# Kode aplikasi belum di-push ke repo mana pun. Saat sudah tersedia:
-npm install          # Node.js 22+
-cp .env.example .env # isi Supabase URL & API Key
+Seed menyediakan akun demo berikut; ganti password setelah login:
+
+| Username | Password | Role |
+|---|---|---|
+| `admin.sales` | `sales123` | Marketing |
+| `admin.accounting` | `accounting123` | Accounting |
+
+### 2. Jalankan backend
+
+```bash
+cd backend
+npm install
+```
+
+Buat `backend/.env`:
+
+```dotenv
+PORT=3000
+CORS_ORIGIN=http://localhost:5173
+AUTH_TOKEN_SECRET=replace-with-a-random-secret-at-least-32-characters
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_NAME=spillbill
+DB_USER=root
+DB_PASSWORD=your-mysql-password
+DB_CONNECTION_LIMIT=5
+DB_SSL=false
+```
+
+Jalankan API:
+
+```bash
 npm run dev
 ```
+
+### 3. Jalankan frontend
+
+Di terminal lain:
+
+```bash
+cd frontend
+npm install
+```
+
+Buat `frontend/.env`:
+
+```dotenv
+VITE_API_URL=http://localhost:3000
+```
+
+Lalu:
+
+```bash
+npm run dev
+```
+
+Buka URL Vite yang ditampilkan di terminal. Tes backend: `cd backend && npm test`. Build frontend: `cd frontend && npm run build`.
 
 ---
 
