@@ -156,6 +156,7 @@ export const filterPayments = (query: string, method: 'ALL' | PaymentMethod = 'A
 export type Customer = {
   id: string
   name: string
+  createdAt: string
   email: string
   phone: string
   orders: number
@@ -165,11 +166,11 @@ export type Customer = {
 }
 
 export const customers: Customer[] = [
-  { id: 'CUS-001', name: 'CV Sinar Jaya', email: 'admin@sinarjaya.id', phone: '0812 3456 7890', orders: 3, billed: 6500000, outstanding: 2000000, status: 'Aktif' },
-  { id: 'CUS-002', name: 'PT Rasa Nusantara', email: 'finance@rasanusantara.id', phone: '0813 2211 9087', orders: 2, billed: 4000000, outstanding: 1500000, status: 'Aktif' },
-  { id: 'CUS-003', name: 'Koperasi Maju Bersama', email: 'koperasi.maju@mail.id', phone: '0821 7788 9900', orders: 1, billed: 750000, outstanding: 750000, status: 'Aktif' },
-  { id: 'CUS-004', name: 'Toko Kopi Aroma', email: 'halo@kopiaroma.id', phone: '0857 1122 3344', orders: 0, billed: 0, outstanding: 0, status: 'Belum ada transaksi' },
-  { id: 'CUS-005', name: 'CV Bumi Digital', email: 'hello@bumidigital.id', phone: '0819 4455 6677', orders: 0, billed: 0, outstanding: 0, status: 'Belum ada transaksi' },
+  { id: 'CUS-001', name: 'CV Sinar Jaya', createdAt: '2026-10-25', email: 'admin@sinarjaya.id', phone: '0812 3456 7890', orders: 3, billed: 6500000, outstanding: 2000000, status: 'Aktif' },
+  { id: 'CUS-002', name: 'PT Rasa Nusantara', createdAt: '2026-10-24', email: 'finance@rasanusantara.id', phone: '0813 2211 9087', orders: 2, billed: 4000000, outstanding: 1500000, status: 'Aktif' },
+  { id: 'CUS-003', name: 'Koperasi Maju Bersama', createdAt: '2026-10-21', email: 'koperasi.maju@mail.id', phone: '0821 7788 9900', orders: 1, billed: 750000, outstanding: 750000, status: 'Aktif' },
+  { id: 'CUS-004', name: 'Toko Kopi Aroma', createdAt: '2026-10-20', email: 'halo@kopiaroma.id', phone: '0857 1122 3344', orders: 0, billed: 0, outstanding: 0, status: 'Belum ada transaksi' },
+  { id: 'CUS-005', name: 'CV Bumi Digital', createdAt: '2026-10-19', email: 'hello@bumidigital.id', phone: '0819 4455 6677', orders: 0, billed: 0, outstanding: 0, status: 'Belum ada transaksi' },
 ]
 
 export const filterCustomers = (query: string, list = customers) => {
@@ -204,6 +205,24 @@ export const salesOrders: SalesOrder[] = [
   { number: 'SO-2026-003', customer: 'PT Rasa Nusantara', total: 1500000, status: 'DRAFT' },
   { number: 'SO-2026-005', customer: 'Koperasi Maju Bersama', total: 750000, status: 'DRAFT' },
 ]
+
+export const dashboardMetrics = (customers: Pick<Customer, 'createdAt'>[], orders: SalesOrderRecord[], today = new Date()) => {
+  const currentMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}`
+  const trend = Array.from({ length: 6 }, (_, index) => {
+    const date = new Date(today.getFullYear(), today.getMonth() - 5 + index, 1)
+    const month = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`
+    return { month, count: orders.filter((order) => order.date.slice(0, 7) === month).length }
+  })
+  const drafts = orders.filter(({ status }) => status === 'DRAFT')
+  return {
+    monthlyOrders: orders.filter(({ date }) => date.slice(0, 7) === currentMonth).length,
+    newCustomers: customers.filter(({ createdAt }) => createdAt?.slice(0, 7) === currentMonth).length,
+    unbilledCount: drafts.length,
+    unbilledTotal: drafts.reduce((total, order) => total + order.total, 0),
+    trend,
+    statusCounts: { DRAFT: drafts.length, INVOICED: orders.filter(({ status }) => status === 'INVOICED').length, CANCELLED: orders.filter(({ status }) => status === 'CANCELLED').length },
+  }
+}
 
 export const formatRupiah = (value: number) =>
   `Rp${new Intl.NumberFormat('id-ID', { maximumFractionDigits: 0 }).format(value)}`

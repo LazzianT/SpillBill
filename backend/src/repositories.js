@@ -4,14 +4,14 @@ const contactFields = (value = '') => {
   const [email = '', phone = ''] = value.split('|').map((part) => part.trim())
   return { email, phone }
 }
-const customerDto = (row) => ({ id: row.id, name: row.name, ...contactFields(row.contact_info), orders: Number(row.orders), billed: Number(row.billed), outstanding: Number(row.outstanding), status: Number(row.orders) ? 'Aktif' : 'Belum ada transaksi' })
+const customerDto = (row) => ({ id: row.id, name: row.name, createdAt: row.created_at, ...contactFields(row.contact_info), orders: Number(row.orders), billed: Number(row.billed), outstanding: Number(row.outstanding), status: Number(row.orders) ? 'Aktif' : 'Belum ada transaksi' })
 const productDto = (row) => ({ id: row.id, name: row.name, price: Number(row.unit_price), active: Boolean(row.active), usedIn: Number(row.used_in) })
 
 const history = (action, type, id, description, actor) => ['INSERT INTO histories (id, actor_user_id, action, entity_type, entity_id, description) VALUES (?, ?, ?, ?, ?, ?)', [randomUUID(), actor, action, type, id, description]]
 
 export const customerRepository = {
   async list(pool) {
-    const [rows] = await pool.execute(`SELECT c.id, c.name, c.contact_info, COUNT(DISTINCT so.id) AS orders, COALESCE(SUM(DISTINCT inv.total), 0) AS billed, COALESCE(SUM(DISTINCT inv.remaining), 0) AS outstanding FROM customers c LEFT JOIN sales_orders so ON so.customer_id = c.id AND so.archived_at IS NULL LEFT JOIN invoice_summary inv ON inv.sales_order_id = so.id AND inv.archived_at IS NULL WHERE c.archived_at IS NULL GROUP BY c.id, c.name, c.contact_info ORDER BY c.name`)
+    const [rows] = await pool.execute(`SELECT c.id, c.name, c.contact_info, DATE_FORMAT(c.created_at, '%Y-%m-%d') AS created_at, COUNT(DISTINCT so.id) AS orders, COALESCE(SUM(DISTINCT inv.total), 0) AS billed, COALESCE(SUM(DISTINCT inv.remaining), 0) AS outstanding FROM customers c LEFT JOIN sales_orders so ON so.customer_id = c.id AND so.archived_at IS NULL LEFT JOIN invoice_summary inv ON inv.sales_order_id = so.id AND inv.archived_at IS NULL WHERE c.archived_at IS NULL GROUP BY c.id, c.name, c.contact_info, c.created_at ORDER BY c.name`)
     return rows.map(customerDto)
   },
   async save(pool, actor, body, id) {
