@@ -132,6 +132,18 @@ flowchart LR
 
 ---
 
+## Deploy via Portainer
+
+1. Siapkan `backend/.env` lokal dari `.env.example`; isi DB credentials, `AUTH_TOKEN_SECRET` acak minimal 32 karakter, `VITE_API_URL` (URL publik API), dan `CORS_ORIGIN` (URL frontend).
+2. Di Portainer pilih **Stacks → Add stack → Repository**, isi URL Git repository, branch, serta path `docker-compose.yml`.
+3. Saat Portainer meminta environment variables, upload `backend/.env` lokal melalui **Load variables from .env file**. Jangan commit file tersebut ke Git.
+4. Pastikan MySQL VPS mengizinkan koneksi dari host Docker pada port DB yang dipakai. Jika MySQL berada di VPS yang sama, gunakan alamat gateway/host yang dapat dijangkau dari container, bukan `localhost`.
+5. Deploy stack. Frontend tersedia di `http://<VPS-IP>:1001`; API di `http://<VPS-IP>:1002`.
+
+Atur `VITE_API_URL=http://<VPS-IP>:1002` dan `CORS_ORIGIN=http://<VPS-IP>:1001` pada `backend/.env`. Gunakan domain HTTPS saat sudah tersedia. Perubahan `VITE_API_URL` memerlukan rebuild frontend.
+
+Stack mengekspos API ke jaringan publik pada port 1002. Batasi akses melalui firewall bila API hanya perlu dijangkau pengguna tertentu.
+
 ## Instalasi Lokal
 
 ### Prasyarat

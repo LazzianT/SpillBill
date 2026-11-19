@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      AUTH_TOKEN_SECRET: ${AUTH_TOKEN_SECRET:?Set AUTH_TOKEN_SECRET in Portainer}
+      CORS_ORIGIN: ${CORS_ORIGIN:?Set CORS_ORIGIN in Portainer, e.g. http://your-vps:1001}
+      DB_HOST: ${DB_HOST:?Set DB_HOST in Portainer}
+      DB_PORT: ${DB_PORT:-3306}
+      DB_NAME: ${DB_NAME:?Set DB_NAME in Portainer}
+      DB_USER: ${DB_USER:?Set DB_USER in Portainer}
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in Portainer}
+      DB_CONNECTION_LIMIT: ${DB_CONNECTION_LIMIT:-5}
+      DB_SSL: ${DB_SSL:-false}
+    ports:
+      - "1002:3000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:?Set VITE_API_URL in Portainer, e.g. http://your-vps:1002}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "1001:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

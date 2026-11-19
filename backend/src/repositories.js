@@ -74,7 +74,7 @@ export const salesOrderRepository = {
       } else {
         const prefix = `SO-${body.orderDate.slice(0, 7)}-`
         for (let attempt = 0; attempt < 3; attempt++) {
-          const [latest] = await connection.execute('SELECT order_number FROM sales_orders WHERE order_number LIKE ? ORDER BY order_number DESC LIMIT 1', [`${prefix}%`])
+          const [latest] = await connection.execute('SELECT order_number FROM sales_orders WHERE order_number REGEXP ? ORDER BY order_number DESC LIMIT 1', [`^SO-${body.orderDate.slice(0, 7)}-[0-9]{4}$`])
           const sequence = latest[0] ? Number(latest[0].order_number.slice(-4)) + 1 : 1
           if (sequence > 9999) throw Object.assign(new Error('Sales order monthly sequence exhausted'), { statusCode: 409 })
           orderNumber = `${prefix}${String(sequence).padStart(4, '0')}`

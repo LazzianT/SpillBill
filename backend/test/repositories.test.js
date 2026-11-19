@@ -71,7 +71,7 @@ test('creates a draft sales order and items atomically from validated product ID
 test('numbers sales orders by the highest monthly sequence and resets each month', async () => {
   const saved = new Map([['2026-11', ['SO-2026-11-0007', 'SO-2026-11-0002', 'SO-2026-11-ABCD']], ['2026-12', []]])
   const pool = { getConnection: async () => ({ beginTransaction: async () => {}, commit: async () => {}, rollback: async () => {}, release() {}, execute: async (sql, values) => {
-    if (sql.includes('SELECT order_number FROM sales_orders')) { const month = values[0].match(/SO-(\d{4}-\d{2})-/)[1]; return [[...(saved.get(month) ?? [])].sort().reverse().slice(0, 1).map((order_number) => ({ order_number }))] }
+    if (sql.includes('SELECT order_number FROM sales_orders')) { const month = values[0].match(/SO-(\d{4}-\d{2})-/)[1]; return [[...(saved.get(month) ?? []).filter((number) => new RegExp(`^SO-${month}-\\d{4}$`).test(number))].sort().reverse().slice(0, 1).map((order_number) => ({ order_number }))] }
     if (sql.includes('FROM customers')) return [[{ id: '20000000-0000-0000-0000-000000000001' }]]
     if (sql.includes('FROM products')) return [[{ id: '30000000-0000-0000-0000-000000000001', name: 'Widget', unit_price: '12.50' }]]
     if (sql.includes('INSERT INTO sales_orders')) { saved.get(values[1].slice(3, 10)).push(values[1]); return [{ affectedRows: 1 }] }
