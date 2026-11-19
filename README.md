@@ -140,7 +140,7 @@ flowchart LR
 4. Pastikan MySQL VPS mengizinkan koneksi dari host Docker pada port DB yang dipakai. Jika MySQL berada di VPS yang sama, gunakan alamat gateway/host yang dapat dijangkau dari container, bukan `localhost`.
 5. Deploy stack. Frontend tersedia di `http://<VPS-IP>:1001`; API di `http://<VPS-IP>:1002`.
 
-Atur `VITE_API_URL=http://<VPS-IP>:1002` dan `CORS_ORIGIN=http://<VPS-IP>:1001` pada `backend/.env`. Gunakan domain HTTPS saat sudah tersedia. Perubahan `VITE_API_URL` memerlukan rebuild frontend.
+Atur `VITE_API_URL=http://<VPS-IP>:1002` dan `CORS_ORIGIN=https://<domain-frontend>` pada `backend/.env`. Frontend container di-bind ke `127.0.0.1:1003`; arahkan reverse proxy ke `http://127.0.0.1:1003`. Gunakan domain HTTPS saat sudah tersedia. Perubahan `VITE_API_URL` memerlukan rebuild frontend.
 
 Stack mengekspos API ke jaringan publik pada port 1002. Batasi akses melalui firewall bila API hanya perlu dijangkau pengguna tertentu.
 
