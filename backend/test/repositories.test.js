@@ -1,6 +1,13 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { salesOrderRepository, invoiceRepository, paymentRepository, historyRepository, productRepository } from '../src/repositories.js'
+import { salesOrderRepository, invoiceRepository, paymentRepository, historyRepository, productRepository, customerRepository } from '../src/repositories.js'
+
+test('customer list includes the creation date for dashboard metrics', async () => {
+  let query
+  const result = await customerRepository.list({ execute: async (sql) => { query = sql; return [[{ id: 'c1', name: 'Live customer', contact_info: '', created_at: '2026-11-05', orders: 0, billed: '0', outstanding: '0' }]] } })
+  assert.match(query, /c\.created_at/)
+  assert.equal(result[0].createdAt, '2026-11-05')
+})
 
 test('changes product active status and records the transition', async () => {
   const calls = []

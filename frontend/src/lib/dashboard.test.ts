@@ -32,7 +32,21 @@ assert.deepEqual(filterPayments('ref-live', 'ALL', [livePayment]), [livePayment]
 assert.deepEqual(paginate(['a', 'b', 'c'], 1, 2), { items: ['a', 'b'], page: 1, pageCount: 2 })
 assert.deepEqual(paginate(['a', 'b', 'c'], 2, 2), { items: ['c'], page: 2, pageCount: 2 })
 assert.deepEqual(paginate([], 9, 2), { items: [], page: 1, pageCount: 1 })
-import { currentMonthPayments } from './dashboard.ts'
+import { currentMonthPayments, dashboardMetrics } from './dashboard.ts'
+
+const metrics = dashboardMetrics(
+  [{ createdAt: '2026-11-01' }, { createdAt: '2026-10-31' }],
+  [
+    { number: 'SO-1', customer: 'A', date: '2026-11-30', item: '', total: 150, remaining: 150, status: 'DRAFT' },
+    { number: 'SO-2', customer: 'B', date: '2026-10-01', item: '', total: 80, remaining: 0, status: 'INVOICED' },
+    { number: 'SO-3', customer: 'C', date: '2026-11-15', item: '', total: 20, remaining: 0, status: 'CANCELLED' },
+  ],
+  new Date(2026, 10, 30),
+)
+assert.deepEqual(metrics.trend.map(({ month, count }) => [month, count]), [['2026-06', 0], ['2026-07', 0], ['2026-08', 0], ['2026-09', 0], ['2026-10', 1], ['2026-11', 2]])
+assert.deepEqual({ monthlyOrders: metrics.monthlyOrders, newCustomers: metrics.newCustomers, unbilledCount: metrics.unbilledCount, unbilledTotal: metrics.unbilledTotal, statusCounts: metrics.statusCounts }, { monthlyOrders: 2, newCustomers: 1, unbilledCount: 1, unbilledTotal: 150, statusCounts: { DRAFT: 1, INVOICED: 1, CANCELLED: 1 } })
+assert.equal(dashboardMetrics([], [], new Date(2026, 10, 30)).trend.length, 6)
+assert.equal(dashboardMetrics([], [], new Date(2026, 10, 30)).statusCounts.DRAFT, 0)
 
 const monthStats = currentMonthPayments([
   { date: '2026-11-02', amount: 100, status: 'SUCCESS' as const },
