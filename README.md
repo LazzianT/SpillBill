@@ -22,6 +22,8 @@
 ![Contributors](https://img.shields.io/github/contributors/LazzianT/SpillBill?style=flat&logo=github&color=DB61A2&label=contributors)
 ![Repo Size](https://img.shields.io/github/repo-size/LazzianT/SpillBill?style=flat&logo=github&color=8B949E&label=size)
 
+**Aplikasi:** [spillbill.twizzi.my.id](https://spillbill.twizzi.my.id)
+
 **SpillBill** adalah aplikasi web *Order-to-Invoice* yang membantu UMKM mengelola seluruh alur transaksi — mulai dari pencatatan pelanggan, pemesanan (Sales Order), penerbitan faktur otomatis, hingga pelacakan pembayaran dan pelunasan — semuanya secara digital, cepat, dan rapi.
 
 > Aplikasi SpillBill mengelola pelanggan, produk, Sales Order, invoice, pembayaran, dan riwayat aktivitas dengan autentikasi berbasis role.
@@ -218,6 +220,19 @@ npm run dev
 ```
 
 Buka URL Vite yang ditampilkan di terminal. Tes backend: `cd backend && npm test`. Build frontend: `cd frontend && npm run build`.
+
+---
+
+## 🧪 Pengujian Black-box & White-box
+
+Pengujian aplikasi mencakup dua pendekatan:
+
+- **Black-box:** validasi perilaku dari sisi pengguna melalui input dan output fitur, termasuk data pelanggan, Sales Order, invoice, pembayaran, dan dashboard.
+- **White-box:** pemeriksaan logika internal, validasi data, otorisasi role, kalkulasi total, aturan perubahan status, serta penanganan kegagalan.
+
+Pengujian otomatis backend: `cd backend && npm test`. Test frontend tersedia di `frontend/src/lib/*.test.ts`.
+
+> Ringkasan ini menjelaskan cakupan umum. Rincian kasus dari berkas presentasi pengujian perlu ditambahkan setelah isi slide dapat diekstrak.
 
 ---
 
